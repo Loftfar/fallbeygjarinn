@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Fallbeygjarinn",
+	"version": "0.1",
+	"description": "Fallbeygir nöfn á Facebook",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["jquery-1.11.0.min.js","content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
